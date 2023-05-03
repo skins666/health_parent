@@ -7,7 +7,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>health_service_provider</artifactId>
+    <artifactId>health_service_pro</artifactId>
     <packaging>war</packaging>
     <dependencies>
         <dependency>
