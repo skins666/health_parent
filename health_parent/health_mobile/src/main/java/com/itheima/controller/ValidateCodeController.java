@@ -17,6 +17,12 @@ public class ValidateCodeController {
     private JedisPool jedisPool;
 
     //体检预约发送验证码
+
+    /**
+     * 体检预约发送验证码
+     * @param telephone
+     * @return
+     */
     @RequestMapping("/send4Order")
     public Result send4Order(String telephone){
         String code = ValidateCodeUtils.generateValidateCode(4).toString();

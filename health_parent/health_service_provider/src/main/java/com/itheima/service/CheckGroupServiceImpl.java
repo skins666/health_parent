@@ -10,6 +10,7 @@ import com.itheima.pojo.CheckGroup;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.annotation.Resource;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,7 +21,7 @@ import java.util.Map;
 @Service(interfaceClass = CheckGroupService.class)
 @Transactional
 public class CheckGroupServiceImpl implements CheckGroupService {
-    @Autowired
+    @Resource
     private CheckGroupDao checkGroupDao;
     //新增检查组，同时需要关联检查项（设置多对多关系）
     public void add(CheckGroup checkGroup, Integer[] checkitemIds) {
