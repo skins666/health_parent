@@ -16,7 +16,7 @@ public class ValidateCodeController {
     @Autowired
     private JedisPool jedisPool;
 
-    //体检预约发送验证码
+
 
     /**
      * 体检预约发送验证码
